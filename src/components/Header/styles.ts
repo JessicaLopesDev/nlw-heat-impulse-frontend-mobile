@@ -1,4 +1,3 @@
-import { TouchableOpacity } from 'react-native';
 import styled, { css } from 'styled-components/native';
 
 export const Container = styled.View`
@@ -15,7 +14,7 @@ export const RightSide = styled.View`
   align-items: center;
 `;
 
-export const LogOutButton = styled(TouchableOpacity)`
+export const LogOutButton = styled.TouchableOpacity`
 `;
 
 export const ButtonText = styled.Text`
