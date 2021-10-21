@@ -60,7 +60,7 @@ function AuthProvider({ children }: AuthProviderProps) {
   
         api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
         await AsyncStorage.setItem(StorageKeys.USER_STORAGE, JSON.stringify(user));
-        await AsyncStorage.setItem(StorageKeys.TOKEN_STORAGE, JSON.stringify(token));
+        await AsyncStorage.setItem(StorageKeys.TOKEN_STORAGE, token);
         setUser(user);
       }
       
